@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-image: url(../Portfolio/bg.jpg);
+    background-size: cover;
+}
+
+li, a {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #edf0f1;
+    text-decoration: none;
+    
+}
+
+.navbar{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 20px;
+    padding-top: -2px;
+    padding-bottom: -2px;
+    border-radius: 50px;
+}
+
+h2 {
+    cursor: pointer;
+    font-family: "montserrat", sans-serif;
+    margin-right: 54%;
+    color: #edf0f1;
+}
+
+.nav_links{
+    list-style: none;
+    padding-right: 46px;
+}
+
+.nav_links li{
+    display: inline-block;
+    padding: 0px 20px ;
+}
+
+.nav_links li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav_links li a:hover{
+    color: #0088a9;
+}
+
+button{
+    color: white;
+    margin-right: 30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 9px 25px;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+button:hover{
+    background-color: rgba(24, 33, 36, 0.918);
+}
+
+img {
+    clip-path: circle();
+    margin-top: 105px;
+    margin-left: 30px;
+    justify-content: center;
+    display: flex;
+    box-shadow: 120px;
+
+}
+
+.text {
+    font-size: 79px;
+    font-family: 'Anton', sans-serif;
+    color: transparent;
+    font-weight: 800;
+    text-align: center;
+    margin-top: -340px; 
+    margin-left: 120px; 
+    -webkit-text-stroke: 0.8px #fff;
+    background: url(../Portfolio/back.png);
+    -webkit-background-clip: text;
+    background-position: 0 0;
+    animation: back 20s linear infinite;
+}
+@keyframes back {
+    100%{
+        background-position: 2000px 0;
+    }
+}
+span{
+    font-size: 20px;
+}
+
+ h6{
+    font-size: 68px;
+    font-family: 'Anton', sans-serif; 
+    color: white;
+    font-weight: 600;
+    text-align: center;
+    margin-top: -60px; 
+    margin-left: -50px; 
+    
+}
+
+h5{
+    font-size: 18px;
+    font-family: 'Anton', sans-serif;
+    color: white;
+    font-weight: 200;
+    text-align: center;
+    margin-top: -60px; 
+    margin-left: -50px; 
+}
+
+.box {
+    width: 150px; height: 55px; background: red; border-radius: 10px; cursor: pointer; position: relative;
+    display: flex; justify-content: center; align-items: center;
+}
+
+.box a{
+    margin: 5px; color: #1c1c1c;
+}
+
+.box a:hover {
+    color: #3683ff; text-shadow: 0 0 20px #3683ff9f;
+}
+
+.top {
+    position: absolute; background: #0d0d0d;
+    top: -1%; width: 102%; height: 71%;
+    border-radius: 10px 10px 0 0; display: flex;
+    justify-content: center;
+    align-items: center; transition: all .4s;
+    text-shadow: 0 0 20px #3683ff9f;
+}
+
+.top p{ transition: all .4s;}
+
+.bottom {
+    position: absolute; background: #0d0d0d; bottom: -1%; width: 102%; height: 31%; border-radius: 0 0 10px 10px;
+    transition: all .4s;
+} 
+
+.bottom::before{
+    content: ''; position: absolute;
+    top: 0; left: 50%;
+    transform: translate(-50%); width: 60%;
+    height: 2px; background: #ffffff;
+    transition: all .2s;
+}
+
+.box:hover .bottom::before{
+    transform: translate(-50%, 380%); background: #3683ff;
+    box-shadow: 0 0 20px #3683ff9f;
+}
+
+.box:hover .top{ transform: translateY(-80%);}
+.box:hover .top p{
+    color: #3683ff; text-shadow: 0 0 20px #3683ff;
+}
+.box:hover .bottom{ transform: translateY(38%);}
